@@ -1,0 +1,30 @@
+<div class="container align-items-center">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1>
+                <p id="title">{{APOD.title}}</p>
+            </h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid" [src]="APOD.hdurl" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="float-left" id="date">Photo taken on: {{APOD.date}}</p>
+            </div>
+
+            <div class="col-sm-6">
+                <p class="float-right" id="copyright">copyright ©: {{APOD.copyright}}</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p id="description">{{APOD.explanation}}</p>
+            </div>
+        </div>
+    </div>
+</div>
